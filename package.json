@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "setup": "cp -n .env.example .env || true",
-    "build": "next build",
+    "build": "node create-env-file.js && next build",
     "start": "next start",
     "lint": "next lint"
   },
