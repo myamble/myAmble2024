@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "cp -n .env.example .env || true && next build",
+    "setup": "cp -n .env.example .env || true",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
