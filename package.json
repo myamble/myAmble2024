@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node ./hooks/create-env-file.js && next build",
+    "build": "echo \"$(env)\" > .env && next build",
     "start": "next start",
     "lint": "next lint"
   },
